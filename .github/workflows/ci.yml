@@ -47,6 +47,7 @@ jobs:
   publish:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
+    continue-on-error: true
     runs-on: ubuntu-latest
 
     outputs:
