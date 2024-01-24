@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      new_version_published: ${{ steps.release.outputs.new_version_published }}
+      new_version_published: ${{ steps.release.outputs.new_version }}
 
     steps:
       - uses: actions/checkout@v2
